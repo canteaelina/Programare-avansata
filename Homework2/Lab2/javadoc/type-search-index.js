@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"compulsory","l":"BestRoute"},{"p":"compulsory","l":"Harta"},{"p":"compulsory","l":"Location"},{"p":"compulsory","l":"Road"},{"p":"compulsory","l":"RoadTypes","k":"9"}];updateSearchResults();
