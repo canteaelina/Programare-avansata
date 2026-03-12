@@ -72,10 +72,10 @@ public class Person implements Profile {
     public int compareToImp(Profile other)
     {
         if(this.getImportance() < other.getImportance())
-            return -1;
+            return 1;
         if(this.getImportance() == other.getImportance())
             return 0;
-        return 1;
+        return -1;
     }
 
     //Metoda care obtine importanta (nr de relatii)
@@ -90,6 +90,6 @@ public class Person implements Profile {
 
     @Override
     public String toString() {
-        return this.id + " - " + this.name + "\nSpecialization: none";
+        return this.id + " - " + this.name + "\nSpecialization: none" + "\nImportance: " + this.getImportance() + "\n";
     }
 }

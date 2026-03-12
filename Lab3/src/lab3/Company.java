@@ -80,15 +80,15 @@ public class Company implements Profile {
     public int compareToImp(Profile other)
     {
         if(this.getImportance() < other.getImportance())
-            return -1;
+            return 1;
         if(this.getImportance() == other.getImportance())
             return 0;
-        return 1;
+        return -1;
     }
 
     @Override
     public String toString() {
-        return this.id + " - " + this.name + "\nLocation: " + this.hq;
+        return this.id + " - " + this.name + "\nLocation: " + this.hq + "\nImportance: " + this.getImportance() + "\n";
     }
 
 }
