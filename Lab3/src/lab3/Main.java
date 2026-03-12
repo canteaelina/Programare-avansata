@@ -45,7 +45,7 @@ public class Main {
         System.out.println("--- Reteaua Inainte de Sortare Bazata pe Importanta ---");
         System.out.println(socialNetwork);
 
-        // Sortez lista folosind un comparator
+        // sortare dupa importanta
         socialNetwork.sortImp();
         System.out.println("--- Reteaua Dupa Sortarea Bazata pe Importanta ---");
         System.out.println(socialNetwork);
