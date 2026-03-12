@@ -1,8 +1,5 @@
 package lab3;
 
-import java.util.Collections;
-import java.util.Comparator;
-
 public class Main {
     public static void main(String[] args) {
         Person p1 = new Person("Zaharia Vasile");
@@ -20,7 +17,7 @@ public class Main {
         c2.addRelationship(p3, "CEO");
 
         // fac reteaua
-        Network socialNetwork = new Network();
+        SocialNetwork socialNetwork = new SocialNetwork();
         socialNetwork.addProfile(p1);
         socialNetwork.addProfile(c1); // Le adăugăm intenționat amestecate
         socialNetwork.addProfile(p2);

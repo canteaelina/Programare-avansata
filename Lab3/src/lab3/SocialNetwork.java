@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Network {
+public class SocialNetwork {
     private List<Profile> profiles;
 
-    public Network() {
+    public SocialNetwork() {
         this.profiles = new ArrayList<>();
     }
 
@@ -26,6 +26,8 @@ public class Network {
     public void sort() {
         Collections.sort(profiles, Profile::compareTo);
     }
+
+    public void sortImp() { Collections.sort(profiles, Profile::compareToImp); }
 
     @Override
     public String toString() {
