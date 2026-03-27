@@ -57,5 +57,12 @@ public class Main {
         CableService networkService = new CableService(city);
         networkService.findSolution(10);
 
+        System.out.println("\nGenerare Oras (graf incomplet):");
+        City incompleteCity = Generator.genCity(100, 0.7);
+        MaintenanceRoute.findMaintenanceRoute(incompleteCity);
+
+        System.out.println("\nGenerare Oras (graf complet):");
+        City completeCity = Generator.genCity(100, 1.0);
+        MaintenanceRoute.findMaintenanceRoute(completeCity);
     }
 }

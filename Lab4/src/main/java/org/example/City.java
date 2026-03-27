@@ -31,6 +31,7 @@ public class City {
         this.streets = streets;
     }
 
+    //functie care afiseaza strazile care respecta lungimea minima data si nr min de 3 conexiuni
     public void displayStreets(int minLength)
     {
         Map<Intersection, Long> intersectionJoins = streets.stream().flatMap(s -> Stream.of(s.getI1(), s.getI2()))

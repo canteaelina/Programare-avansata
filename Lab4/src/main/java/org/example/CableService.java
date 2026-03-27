@@ -36,15 +36,17 @@ public class CableService {
         List<SpanningTreeAlgorithm.SpanningTree<Street>> solutions =  new ArrayList<>();
         solutions.add(mst);
 
-        //Acum cautam alternative eliminand pe rand muchii din mst ul principal
+        //acum cautam alternative eliminand pe rand muchii din mst ul principal
 
         for(Street s : mst.getEdges())
         {
             graph.removeEdge(s);
 
+            //creez noul mst
             var otherKruskal = new KruskalMinimumSpanningTree<>(graph);
             var otherMst = otherKruskal.getSpanningTree();
 
+            //verific daca s a putut ajunge in toate nodurile
             if(otherMst.getEdges().size() == city.getIntersections().size() - 1)
             {
                 solutions.add(otherMst);
@@ -54,9 +56,11 @@ public class CableService {
             graph.setEdgeWeight(s, s.getLength());
         }
 
-        //Ordonare crescatoare dupa cost
+        //ordonare crescatoare dupa cost
         solutions.sort(Comparator.comparingDouble(SpanningTreeAlgorithm.SpanningTree::getWeight));
-        
+
+
+        //afisarea solutiilor
         int k = Math.min(maxSol, solutions.size());
         for(int i = 0; i < k; i++)
         {
