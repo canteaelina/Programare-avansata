@@ -100,7 +100,7 @@ public class MaintenanceRoute {
         List<Integer> logicalTour = new ArrayList<>();
         Set<Integer> visited = new HashSet<>();
         dfs(0, mstAdj, visited, logicalTour);
-        logicalTour.add(0); // Întoarcerea la depou
+        logicalTour.add(0); //intoarcere la start
 
         //reconstructia drumului
         List<Intersection> physicalRoute = new ArrayList<>();
@@ -113,7 +113,7 @@ public class MaintenanceRoute {
 
             if (next[start][end] == -1)
             {
-                System.out.println("Eroare: Graful nu este conex! Nu se poate ajunge la toate intersecțiile.");
+                System.out.println("Eroare: Graful nu este conex! Nu se poate ajunge la toate intersectiile.");
                 return;
             }
             int current = start;
@@ -125,7 +125,7 @@ public class MaintenanceRoute {
             }
 
         }
-        physicalRoute.add(indexToNode.get(0)); //Ultimul nod
+        physicalRoute.add(indexToNode.get(0)); //ultimul nod
 
         System.out.println("Costul Total: " + totalPhysicalCost);
         System.out.println("Traseul:");
