@@ -19,31 +19,49 @@ public class GameClient {
                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 Scanner scanner = new Scanner(System.in)
         ) {
-            System.out.println("Te-ai conectat la server! Introdu o comanda (scrie 'exit' pentru a inchide clientul):");
+            System.out.println("Conectarea s a efectuat cu succes! Introduceti o comanda:");
+
+            // thread pt ascultarea mesajelor de la sv in timp real
+            Thread listenerThread = new Thread(() -> {
+                try {
+                    String response;
+                    while ((response = in.readLine()) != null) {
+                        System.out.println("\n[Server]: " + response);
+                        if ("Server stopped".equals(response)) {
+                            System.exit(0);
+                        }
+                    }
+                } catch (IOException e) {
+                    System.out.println("Conexiunea cu serverul s-a încheiat.");
+                }
+            });
+            listenerThread.start();
 
             while (true) {
                 String command = scanner.nextLine();
 
                 if ("exit".equalsIgnoreCase(command.trim())) {
-                    System.out.println("Se închide clientul...");
+                    out.println("exit");
+                    System.out.println("Se inchide clientul...");
                     break;
                 }
 
                 out.println(command);
-
+                /*
                 String response = in.readLine();
 
                 if (response == null) {
-                    System.out.println("Conexiunea cu serverul a fost întreruptă.");
+                    System.out.println("Conexiunea cu serverul a fost intrerupta.");
                     break;
                 }
 
-                System.out.println("Răspuns server: " + response);
+                System.out.println("Raspuns server: " + response);
 
                 if ("Server stopped".equals(response)) {
                     break;
-                }
+                }*/
             }
+
         } catch (IOException e) {
             System.err.println("Nu se poate conecta la server: " + e.getMessage());
         }
