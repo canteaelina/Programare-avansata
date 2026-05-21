@@ -1,0 +1,20 @@
+May 21, 2026 4:37:05 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'findPlayersByName' a rulat in 275 ms.
+May 21, 2026 4:37:05 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'updatePlayerName (rows updated: 1)' a rulat in 45 ms.
+May 21, 2026 5:38:47 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'findPlayersByName' a rulat in 266 ms.
+May 21, 2026 5:38:47 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'updatePlayerName (rows updated: 1)' a rulat in 36 ms.
+May 21, 2026 5:39:30 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'findPlayersByName' a rulat in 0 ms.
+May 21, 2026 5:39:34 PM org.example.server.util.QueryLogger logException
+SEVERE: [EXCEPTION] Eroare in timpul rularii 'getTop3Results': JDBC exception executing SQL [select re1_0.id,re1_0.created_at,re1_0.game_id,re1_0.player_id,p1_0.id,p1_0.created_at,p1_0.name,p1_0.updated_at,re1_0.response_time_ms,re1_0.score,re1_0.updated_at from results re1_0 join players p1_0 on p1_0.id=re1_0.player_id order by re1_0.score desc,re1_0.response_time_ms fetch first ? rows only] [ORA-00933: SQL command not properly ended
+
+https://docs.oracle.com/error-help/db/ora-00933/] [n/a]
+May 21, 2026 6:06:54 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'findPlayersByName' a rulat in 252 ms.
+May 21, 2026 6:06:54 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'updatePlayerName (rows updated: 1)' a rulat in 36 ms.
+May 21, 2026 6:07:10 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'getTop3Results' a rulat in 49 ms.
