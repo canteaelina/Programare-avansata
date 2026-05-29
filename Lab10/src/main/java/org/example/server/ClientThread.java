@@ -53,7 +53,7 @@ public class ClientThread extends Thread {
                     break;
             } else if ("top".equalsIgnoreCase(request) || "clasament".equalsIgnoreCase(request)) {
 
-                // AICI APELEZI METODA NOUĂ
+                // AICI APELEZI METODA NOUA
                 String clasament = server.getTop3Ranking();
                 out.println(clasament); // Îi trimitem textul clientului care a cerut
 
@@ -83,7 +83,7 @@ public class ClientThread extends Thread {
 
         long startTime = System.currentTimeMillis();
 
-        // Setăm un timeout pe socket pentru a forța limita de timp
+        // Setam un timeout pe socket pentru a forța limita de timp
         // Notă: socket-ul trebuie expus/transmis în acest context
         socket.setSoTimeout((int) TIME_LIMIT_MS);
 

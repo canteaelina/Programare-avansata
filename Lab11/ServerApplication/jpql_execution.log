@@ -18,3 +18,9 @@ May 21, 2026 6:06:54 PM org.example.server.util.QueryLogger logExecutionTime
 INFO: [EXECUTION TIME] JPQL Query 'updatePlayerName (rows updated: 1)' a rulat in 36 ms.
 May 21, 2026 6:07:10 PM org.example.server.util.QueryLogger logExecutionTime
 INFO: [EXECUTION TIME] JPQL Query 'getTop3Results' a rulat in 49 ms.
+May 29, 2026 5:51:03 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'findPlayersByName' a rulat in 259 ms.
+May 29, 2026 5:51:03 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'updatePlayerName (rows updated: 1)' a rulat in 36 ms.
+May 29, 2026 5:51:54 PM org.example.server.util.QueryLogger logExecutionTime
+INFO: [EXECUTION TIME] JPQL Query 'findPlayersByName' a rulat in 18 ms.
