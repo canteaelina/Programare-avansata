@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ade8aa4-8db4-4e18-a182-1ad41e9ac72c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/client/GameClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/ClientThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/GameServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/entity/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/entity/GameEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/entity/PlayerEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/entity/QuestionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/entity/ResultEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/repository/GameRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/repository/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/repository/QuestionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/repository/ResultRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/java/org/example/server/util/QueryLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerApplication/src/main/resources/questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab10/src/main/resources/questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab10/src/main/resources/questions.txt" afterDir="false" />
-    </list>
+    <list default="true" id="0ade8aa4-8db4-4e18-a182-1ad41e9ac72c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +42,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/Progrramare-avansata/Programare-avansata/Lab11/ClientApplication/src/main/java/org/example/Main.java"
+    "onboarding.tips.debug.path": "D:/Progrramare-avansata/Programare-avansata/Lab11/ClientApplication/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
